@@ -1,0 +1,185 @@
+<section>
+    <div class="box">
+       <div class="box-header hideline-asset" style=" margin-top: -5px; background-color: #273239;">
+          <div class="row">
+             <div class="col-lg-3-ads col-md-3 col-sm-3">
+                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+             </div>
+             <!-- End col-lg-3 -->
+             <div class="col-lg-3-ads col-md-3 col-sm-3">
+                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+             </div>
+             <!-- End col-lg-3 -->
+             <div class="col-lg-3-ads col-md-3 col-sm-3">
+                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+             </div>
+             <!-- End col-lg-3 -->
+             <div class="col-lg-3-ads col-md-3 col-sm-3">
+                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+             </div>
+             <!-- End col-lg-3 -->
+          </div>
+          <!-- End Row -->
+       </div>
+       <!-- /.box-header -->
+    </div>
+    <!-- End box -->
+       <div class="container text-center tablet-padding">
+          <section style="margin-bottom: 30px;">
+             <div class="callout" style="margin-bottom: 0!important; background-color: #dff9ed; border-left: #dff9ed; padding-top: 1px;padding-bottom: 1px;">
+                <h1>CENTRALIZE (CEX)</h1>
+             </div>
+
+             <h1 style="font-size: 42px;">BALANCES, DEPOSITS & WITHDRAWALS</h1>
+             <h2 style="font-size: 19px; margin-top: 8px;">Estimated value of holdings: $0.00 USD / 0.00000000 BTC</h2>
+          </section>
+          <div id="" style="margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto; width: 65%;">
+             <div class="progress xs">
+                <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                </div>
+             </div>
+             <!-- End progress -->
+             <div class="description" style="margin-top: 0.2em;">
+                $<span id="wdRemaining">0.00</span> remaining of $<span id="wdLimit">0.00</span> USD <a href="/profile" class="standard">daily limit</a>.
+             </div>
+             <!-- End description -->
+          </div>
+          <div class="contentpanel">
+             <div class="row">
+                <div class="col-md-12">
+                   <div class="form-group text-left" style="font-size: 1.000em">
+                      <input type="checkbox" value="" class="cvit-custom-checkbox"><span style="margin-left: 10px;"><b>Hide 0 Balance</b></span>
+                      <input type="checkbox" value="" class="cvit-custom-checkbox" style="margin-left: 15px;"><span style="margin-left: 10px;"><b>Hide Delisted/Unverified</b></span>
+                   </div>
+                   <div class="nav-tabs-custom box-market">
+                      <ul class="nav nav-tabs" role="tablist">
+                         <!-- Favorites Asset -->
+                         <li role="presentation">
+                            <a href="#fav" aria-controls="favorite" role="tab" data-toggle="tab">
+                            <i class="fa fa-star text-yellow"></i>
+                            Favorites
+                            </a>
+                         </li>
+                         <!-- END Favorites Asset -->
+                         <!-- Asset Tab -->
+                         <li role="presentation" class="active">
+                            <a href="#token" aria-controls="xlm" role="tab" data-toggle="tab">Token</a>
+                         </li>
+                         <li role="presentation">
+                            <a href="#fiat" aria-controls="ardor" role="tab" data-toggle="tab">Fiat</a>
+                         </li>
+                         <!-- END Asset Tab -->
+                         <!-- Search Asset -->
+                         <li class="pull-right">
+                            <div class="input-group">
+                               <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                               <input type="text" class="form-control" placeholder="Cari" name="search" value="" autocomplete="off" id="search_table_finance">
+                            </div>
+                         </li>
+                         <!-- END Search Asset -->
+                      </ul>
+                   <div class="tab-content" style="background-color: #dff9ed;">
+                      <div role="tabpanel" class="tab-pane active" id="token">
+                         <div class="table-responsive">
+                            <div id="finance-table_wrapper" class="dataTables_wrapper">
+                               <table class="table table-bordered table-striped table-markets-large dataTable" role="grid" id="wallet-cex">
+                                  <thead>
+                                     <tr role="row">
+                                        <th></th>
+                                        <th>Code</th>
+                                        <th>Asset Name</th>
+                                        <th>Total Balance</th>
+                                        <th>On Orders</th>
+                                        <th>USD Value</th>
+                                        <th>BTC Value</th>
+                                        <th>Action</th>
+                                     </tr>
+                                  </thead>
+                               </table>
+                            </div>
+                         </div>
+                      </div>
+                       <div role="tabpanel" class="tab-pane" id="fiat">
+                         <div class="table-responsive">
+                            <div id="finance-table_wrapper" class="dataTables_wrapper">
+                               <table class="table table-bordered table-striped table-markets-large dataTable" role="grid">
+                                  <thead>
+                                     <tr role="row">
+                                        <th class="text-center"></th>
+                                        <th class="text-center">Code</th>
+                                        <th class="text-center">Asset Name</th>
+                                        <th class="text-center">Total Balance</th>
+                                        <th class="text-center">On Orders</th>
+                                        <th class="text-center">USD Value</th>
+                                        <th class="text-center">BTC Value</th>
+                                        <th class="text-center">Actions</th>
+                                        <th class="text-center">Markets</th>
+                                     </tr>
+                                  </thead>
+                                  <tbody>
+                                     <tr>
+                                        <td><img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png" width="20" height="20" class="logo-icon"></td>
+                                        <td>
+                                           <strong><a href="https://indodax.com/rupiah" class="text-black">XLM</a></strong>
+                                        </td>
+                                        <td><a href="https://indodax.com/rupiah" class="text-black">Stellar</a></td>
+                                        <td data-search="0">0 XLM</td>
+                                        <td data-search="0">0 XLM</td>
+                                        <td data-search="0">0 XLM</td>
+                                        <td data-search="0">0 XLM</td>
+                                        <td>
+                                           <button class="btn btn-xs btn-success">Deposit</button>
+                                           <button class="btn btn-xs btn-danger">Withdraw</button>
+                                        </td>
+                                        <td>
+                                           <button class="btn btn-xs btn-warning">Market</button>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td><img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png" style="width: 20px; height: 20px; margin-right: 5px; margin-left: 0px;" class="logo-icon"></td>
+                                        <td>
+                                           <strong><a href="https://indodax.com/rupiah" class="text-black">FRAS</a></strong>
+                                        </td>
+                                        <td><a href="https://indodax.com/rupiah" class="text-black">Frasindo</a></td>
+                                        <td data-search="0">0 FRAS</td>
+                                        <td data-search="0">0 FRAS</td>
+                                        <td data-search="0">0 FRAS</td>
+                                        <td data-search="0">0 FRAS</td>
+                                        <td>
+                                           <button class="btn btn-xs btn-success">Deposit</button>
+                                           <button class="btn btn-xs btn-danger">Withdraw</button>
+                                        </td>
+                                        <td>
+                                           <button class="btn btn-xs btn-warning">Market</button>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td><img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png" style="width: 20px; height: 20px; margin-right: 5px; margin-left: 0px;" class="logo-icon"></td>
+                                        <td>
+                                           <strong><a href="https://indodax.com/rupiah" class="text-black">IDR</a></strong>
+                                        </td>
+                                        <td><a href="https://indodax.com/rupiah" class="text-black">Rupiah</a></td>
+                                        <td data-search="0">0 IDR</td>
+                                        <td data-search="0">0 IDR</td>
+                                        <td data-search="0">0 IDR</td>
+                                        <td data-search="0">0 IDR</td>
+                                        <td>
+                                           <button class="btn btn-xs btn-success">Deposit</button>
+                                           <button class="btn btn-xs btn-danger">Withdraw</button>
+                                        </td>
+                                        <td>
+                                           <button class="btn btn-xs btn-warning">Market</button>
+                                        </td>
+                                     </tr>
+                                  </tbody>
+                               </table>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <!-- /.info-box -->   
+       </div>
+       <!-- End container -->

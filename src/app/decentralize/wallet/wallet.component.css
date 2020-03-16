@@ -1,0 +1,12 @@
+.mt10 {
+    margin-top: 10px !important;
+    }
+    .nopadding {
+    padding: 0;
+    }
+    .padding-left-15{
+    padding-left: 15px;
+    }
+    .form-horizontal .control-label {
+    text-align: left;
+    }

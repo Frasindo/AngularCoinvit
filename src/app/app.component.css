@@ -1,0 +1,33 @@
+.nav-tabs-custom > .nav-tabs {
+    border-bottom-color: #000;
+    }
+    .nav-tabs-custom > .nav-tabs > li {
+    border-top: 6px solid transparent;
+    }
+    .nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #d92b60;
+    border-left-color: #000;
+    border-right-color: #000;
+    }
+    .nav-tabs-custom > .nav-tabs > li {
+    border-top: 6px solid transparent;
+    border-top-color: transparent;
+    border-left: 1px solid transparent;
+    border-left-color: transparent;
+    border-right: 1px solid transparent;
+    border-right-color: transparent;
+    }
+    .nav-tabs-custom > .nav-tabs > li.active > a, .nav-tabs-custom > .nav-tabs > li.active:hover > a {
+    background-color: #fbf6d4;
+    }
+    .nav-tabs-custom > .tab-content {
+    background: #fbf6d4;
+    }
+    .btn-market-lr{
+    color: #fff; padding: 10px; margin: 8px;
+    }
+    .btn-market-lr:hover, .btn-market-lr:focus, .btn-market-lr:active, .btn-market-lr.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: #f2341d; /*set the color you want here*/
+    }
