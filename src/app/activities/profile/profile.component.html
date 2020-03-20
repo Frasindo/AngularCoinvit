@@ -1,0 +1,593 @@
+<body class="hold-transition skin-blue sidebar-mini">
+<aside class="main-sidebar">
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu" style="margin-left: 16px; margin-right: 16px;">
+               <span style="color: #fff; font-size: 18px;">ACCOUNT</span>
+               <li class="treeview menu-site-setting ">
+				  <a [routerLink]="['/activity']">
+				  <span>My Activity</span>
+				  </a>
+			   </li>
+			   <li class="treeview menu-site-setting active">
+				  <a [routerLink]="['/profile']">
+				  <span>My Profile</span>
+				  </a>
+			   </li>
+			   <li class="treeview menu-site-setting"  style="font-size: 15px; margin-bottom: 20px;">
+				  <a [routerLink]="['/idverif']">
+				  <span>Identity Verification</span>
+				  </a>
+			   </li>
+			   <span style="color: #fff; font-size: 18px;">SITE SETTINGS</span>
+			   <li class="treeview menu-site-setting">
+				  <a [routerLink]="['/apikey']">
+				  <span>API Keys</span>
+				  </a>
+			   </li>
+            </ul>
+            <!-- /.sidebar -->
+         </aside>
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+          
+            <div class="row" style="margin: 0px 10px 20px 10px;">
+               <div class="col-lg-4">
+                   <h3>
+                     ACCOUNT <small>My Profile & 2FA</small>
+                  </h3>
+                   <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <form action="../../index.html" method="post">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <a href="#" class="thumbnail">
+                                 <img src="../../../assets/dist/img/avatar5.png" alt="Avatar" class="avatar">
+                              </a>
+                           </div>
+                           <!-- End col-lg-6 col-md-6 col-sm-6 -->
+                           <div class="col-lg-6 col-md-6 col-sm-6" style="padding-left: 0px;">
+                              <div class="form-group has-feedback">
+                                 <label>Username</label>
+                                 <input type="text" class="form-control" value="User">
+                              </div>
+                              <!-- End form-group has-feedback -->
+                              <div class="form-group has-feedback">
+                                 <label>Email Username</label>
+                                 <input type="text" class="form-control" value="User@mail.com">
+                              </div>
+                              <!-- End form-group has-feedback -->
+                           </div>
+                           <!-- End col-lg-6 col-md-6 col-sm-6 -->
+                        </div>
+                        <!-- End row -->
+                        <div class="form-group has-feedback">
+                           <label>Current password</label>
+                           <input type="text" class="form-control" placeholder="Current password">
+                        </div>
+                        <!-- End form-group has-feedback -->
+                        <div class="form-group has-feedback">
+                           <label>New password</label>
+                           <input type="password" class="form-control" placeholder="New password">
+                        </div>
+                        <!-- End form-group has-feedback -->
+                        <div class="form-group has-feedback">
+                           <label>Confirm password</label>
+                           <input type="password" class="form-control" placeholder="Confirm password">
+                        </div>
+                        <!-- End form-group has-feedback -->
+                        <div class="row">
+                           <div class="col-xs-12">
+                              <button type="submit" class="btn btn-success btn-block" style="padding: 8px; font-size: 17px;">Change Password</button>
+                           </div>
+                           <!-- /.col -->
+                        </div>
+                     </form>
+                  </div>
+                  <!-- End panel-heading -->
+               </div>
+               <!-- End panel-default -->
+
+
+               <div class="box">
+               <div class="box-body">
+                  <h3>
+                     2FA
+                     <small>Please add EXTRA SECURITY to Protect your Account</small>
+                  </h3>
+                 <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h4 style="font-size: 20px; font-weight: bold; color: #333;">
+                           Status :
+                           <span style="color: #F75535;">
+                           <i class="icon-2fa-red"></i> DISABLED
+                        </span>
+                     </h4>
+                    </div>
+                    <!-- End panel-heading -->
+                    <div class="panel-body" style="padding: 20px;">
+                       <h4 style="font-size: 20px; color: #333;">
+                          How to Enable Two-Factor Authentication
+                       </h4>
+                       <div class="row">  
+                           <div class="col-lg-1 col-md-1 col-sm-1" style="margin-top: 15px;">  
+                              <span class="circle text-blue">1</span>
+                           </div>
+                           <div class="col-lg-11 col-md-11 col-sm-11 text-left" style="margin-top: 15px; padding-left: 30px;">
+                              <p style="font-size: 1.25em;">
+                                 Download Google Authenticator on your mobile device
+                              </p>
+                           </div>
+                           <!-- End col-lg-11 col-md-11 col-sm-11 -->
+                           <div class="col-lg-12 col-md-12 col-sm-12"> 
+                              <img src="../../../assets/dist/img/google-authenticator.png" alt="Google Authenticator">
+                              <p>Google Authenticator</p>
+                           </div>
+                           <!-- End col-lg-12 col-md-12 col-sm-12 -->
+                           <div class="col-lg-6 col-md-6 col-sm-6"> 
+                              <a href="http://www.apple.com/" target="_blank">
+                                 <img src="../../../assets/dist/img/download-apple-store.png" alt="Download on the App Store">
+                              </a>
+                           </div>
+                           <!-- End col-lg-6 col-md-6 col-sm-6 for playstore -->
+                           <div class="col-lg-6 col-md-6 col-sm-6"> 
+                              <a href="http://www.apple.com/" target="_blank">
+                                 <img src="../../../assets/dist/img/download-google-store.png" alt="Download on the App Store">
+                              </a>
+                           </div>
+                           <!-- End col-lg-6 col-md-6 col-sm-6 for appstore -->
+
+                           <div class="col-lg-1 col-md-1 col-sm-1" style="margin-top: 20px;">  
+                              <span class="circle text-blue">2</span>
+                           </div>
+                           <div class="col-lg-11 col-md-11 col-sm-11 text-left" style="margin-top: 20px;  padding-left: 30px;">
+                              <p style="font-size: 1.25em;">
+                                 Use Google Authenticator to scan the QRCode
+                              </p>
+                           </div>
+                           <!-- End col-lg-11 col-md-11 col-sm-11 -->
+                           <div class="col-lg-12 col-md-12 col-sm-12"> 
+                              <img src="../../../assets/dist/img/qr-code.png">
+                           </div>
+                           <!-- End col-lg-12 col-md-12 col-sm-12 -->
+
+                           <div class="col-lg-1 col-md-1 col-sm-1" style="margin-top: 20px;">  
+                              <span class="circle text-blue">3</span>
+                           </div>
+                           <div class="col-lg-11 col-md-11 col-sm-11 text-left" style="margin-top: 20px;  padding-left: 30px;">
+                              <p style="font-size: 1.25em;">
+                                 Back up your Secret Key.
+                              </p>
+
+                              <p>
+                                 Reseting your two - factor authentication requires opening a support ticket and may take up to 48 hours to address; Or easier to use Backup Email.
+                              </p>
+
+                              <h3>Security Key</h3>
+                              <div class="input-group input-group-lg">
+                                 <input type="text" class="form-control">
+                                 <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary">Copy</button>
+                                  </div>
+                              </div>
+                           </div>
+                           <!-- End col-lg-11 col-md-11 col-sm-11 -->
+
+                          
+                           <div class="col-lg-1 col-md-1 col-sm-1" style="margin-top: 50px;">  
+                              <span class="circle text-blue">4</span>
+                           </div>
+                           <div class="col-lg-11 col-md-11 col-sm-11 text-left" style="margin-top: 50px; padding-left: 30px;">
+                              <p style="font-size: 1.25em;">
+                                 Input your Backup Email to TURN-OFF 2FA 
+                              </p>
+
+                              <p>
+                                 Please use an email that is different from your username email, the TURN-OFF 2FA button will be sent to your Backup Email
+                              </p>
+                           </div>
+                           <!-- End col-lg-11 col-md-11 col-sm-11 -->
+                           <div class="col-lg-12 col-md-12 col-sm-12"> 
+                                 <div class="form-group text-left">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Backup Email">
+                                 </div>                           
+                           </div>
+                           <!-- End col-lg-12 col-md-12 col-sm-12 -->
+                           <div class="col-lg-12 col-md-12 col-sm-12"> 
+                                 <div class="form-group text-left">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Re-Enter Backup Email">
+                                 </div>                           
+                           </div>
+                           <!-- End col-lg-12 col-md-12 col-sm-12 -->
+
+                            <div class="col-lg-1 col-md-1 col-sm-1" style="margin-top: 50px;">  
+                              <span class="circle text-blue">5</span>
+                           </div>
+                           <div class="col-lg-11 col-md-11 col-sm-11 text-left" style="margin-top: 50px; padding-left: 30px;">
+                              <p style="font-size: 1.25em;">
+                                 Enter the 6 digit authentication code provided by Google Authenticator
+                              </p>
+                           </div>
+                           <!-- End col-lg-11 col-md-11 col-sm-11 -->
+                           <div class="col-lg-12 col-md-12 col-sm-12"> 
+                                 <div class="form-group text-left">
+                                    <label for="exampleInputEmail1">Authentication Code</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Input your 6-digit authenticator code">
+                                 </div>
+                                 <button type="button" class="btn btn-flat btn-success btn-lg">Enable 2FA</button>                           
+                           </div>
+                           <!-- End col-lg-12 col-md-12 col-sm-12 -->
+
+                       </div>
+                    </div>
+                    <!-- End panel-body -->
+                  </div>
+               <!-- End panel panel-default -->
+               </div>
+               <!-- End box-body -->
+            </div>
+               </div>
+               <!-- End col-lg-6 -->
+               <div class="col-lg-8">
+                   <h3>
+                     EASY LOGIN <small>Link your Blockchain Network Wallets for easy login</small>
+                  </h3>
+                  <h3>
+                     Linked
+                  </h3>
+                  <div class="panel panel-success" id="linked-wallet">
+                  <div class="panel-heading">
+                     <!-- Condtion empty wallet -->
+                     <!-- <div class="register-box-body" style="background-color: #dff0d8;padding: 0;">
+                        <div class="form-group has-feedback">
+                          <h1>No Network Linked</h1>
+                        </div>
+                     </div> -->
+                     <div class="register-box-body" style="background-color: #dff0d8;padding: 0;">
+                           <div class="form-group has-feedback">
+                              <label>Stellar</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet" disabled=""><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ardor</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Bitcoin</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control" readonly=""> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-danger btn-del-wallet"><i class="glyphicon glyphicon-trash"></i></button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                     </div>
+                     <!-- /.form-box -->
+                  </div>
+                  <!-- End panel-heading -->
+               </div>
+
+               <h3>
+                  Not Linked
+               </h3>
+               <div class="panel panel-danger" id="unlinked-wallet">
+                  <div class="panel-heading">
+                     <div class="register-box-body" style="background-color: #f2dede;padding: 0;">
+                           <div class="form-group has-feedback">
+                              <label>Stellar</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ardor</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Bitcoin</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                           <div class="form-group has-feedback">
+                              <label>Ethereum</label>
+                              <div class="row">
+                                 <div class="col-sm-7 col-wallet">
+                                    <input type="text" class="form-control"> 
+                                 </div>
+                                 <!-- End col-sm-7 col-wallet -->
+                                 <div class="col-sm-1 col-del-wallet">
+                                    <button class="btn btn-block btn-warning btn-del-wallet">Link</button>
+                                 </div>
+                                 <!-- End col-sm-1 col-del-wallet -->
+                                 <div class="col-sm-4 col-generate-wallet">
+                                    <button class="btn btn-block btn-success btn-space-generate">Generate New</button>
+                                 </div>
+                                 <!-- End col-sm-4 col generate-wallet -->
+                              </div>
+                              <!-- End Row -->
+                           </div>
+                     </div>
+                     <!-- /.form-box -->
+                  </div>
+                  <!-- End panel-heading -->
+               </div>
+               </div>
+               <!-- End col-lg-6 -->
+            </div>
+            <!-- Small boxes (Stat box) -->
+            <div class="register-box">
+              
+            </div>

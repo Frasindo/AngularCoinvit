@@ -28,12 +28,9 @@
               "src/assets/bower_components/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/bower_components/font-awesome/css/font-awesome.min.css",
               "src/assets/bower_components/Ionicons/css/ionicons.min.css",
-              "src/assets/bower_components/jvectormap/jquery-jvectormap.css",
               "src/assets/dist/css/AdminLTE.css",
-              "src/assets/dist/css/scrollbar-custom.css",
-              "src/assets/dist/css/menu-asset.css",
               "src/assets/dist/css/custom-layout.css",
-              "src/assets/dist/css/flag-icon.css",
+			  "src/assets/dist/css/scrollbar-custom.css",
               "src/assets/dist/css/skins/_all-skins.min.css"
 
             ],

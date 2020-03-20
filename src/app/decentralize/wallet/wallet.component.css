@@ -1,3 +1,6 @@
+@import url("../../../assets/dist/css/column-fixed.css");
+@import url("../../../assets/dist/css/size-custom.css");
+
 .mt10 {
     margin-top: 10px !important;
     }
