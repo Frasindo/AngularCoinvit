@@ -1,25 +1,26 @@
+<body class="hold-transition skin-blue sidebar-mini">
 <aside class="main-sidebar">
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" style="margin-left: 16px; margin-right: 16px;">
        <span style="color: #fff; font-size: 18px;">ACCOUNT</span>
        <li class="treeview menu-site-setting active">
-          <a href="myactivity.html">
+          <a [routerLink]="['/activity']">
           <span>My Activity</span>
           </a>
        </li>
        <li class="treeview menu-site-setting">
-          <a href="myprofile.html">
+          <a [routerLink]="['/profile']">
           <span>My Profile</span>
           </a>
        </li>
        <li class="treeview"  style="font-size: 15px; margin-bottom: 20px;">
-          <a href="idverif.html">
+          <a [routerLink]="['/idverif']">
           <span>Identity Verification</span>
           </a>
        </li>
        <span style="color: #fff; font-size: 18px;">SITE SETTINGS</span>
        <li class="treeview menu-site-setting">
-          <a href="api-keys.html">
+          <a [routerLink]="['/apikey']">
           <span>API Keys</span>
           </a>
        </li>
@@ -105,3 +106,4 @@
         </div>
      </div>
  </div>
+ </body>

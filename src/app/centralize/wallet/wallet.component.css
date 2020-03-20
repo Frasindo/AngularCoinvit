@@ -1,12 +1,19 @@
-       .nav-tabs-custom > .nav-tabs > li.active > a, .nav-tabs-custom > .nav-tabs > li.active:hover > a {
-           background-color: #dff9ed;
-       }
-               td.details-control {
-             text-align:center;
-             color:forestgreen;
-     cursor: pointer;
+@import url("../../../assets/dist/css/column-fixed.css");
+@import url("../../../assets/dist/css/size-custom.css");
+@import url("https://nightly.datatables.net/css/jquery.dataTables.css");
+
+
+.nav-tabs-custom > .nav-tabs > li.active > a, .nav-tabs-custom > .nav-tabs > li.active:hover > a {
+   background-color: #dff9ed;
+}
+	   td.details-control {
+	 text-align:center;
+	 color:forestgreen;
+cursor: pointer;
  }
  tr.shown td.details-control {
      text-align:center; 
      color:red;
  }
+ 
+ 

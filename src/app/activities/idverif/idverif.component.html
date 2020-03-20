@@ -1,0 +1,192 @@
+<body class="hold-transition skin-blue sidebar-mini">
+<aside class="main-sidebar">
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu" style="margin-left: 16px; margin-right: 16px;">
+               <span style="color: #fff; font-size: 18px;">ACCOUNT</span>
+               <li class="treeview menu-site-setting ">
+				  <a [routerLink]="['/activity']">
+				  <span>My Activity</span>
+				  </a>
+			   </li>
+			   <li class="treeview menu-site-setting">
+				  <a [routerLink]="['/profile']">
+				  <span>My Profile</span>
+				  </a>
+			   </li>
+			   <li class="treeview active"  style="font-size: 15px; margin-bottom: 20px;">
+				  <a [routerLink]="['/idverif']">
+				  <span>Identity Verification</span>
+				  </a>
+			   </li>
+			   <span style="color: #fff; font-size: 18px;">SITE SETTINGS</span>
+			   <li class="treeview menu-site-setting">
+				  <a [routerLink]="['/apikey']">
+				  <span>API Keys</span>
+				  </a>
+			   </li>
+            </ul>
+            <!-- /.sidebar -->
+         </aside>
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header" style="background-color: #fff; padding-bottom: 30px;">
+               <h1>
+                  ACCOUNT
+                  <small>Identity Verification</small>
+               </h1>
+            </section>
+            <!-- Small boxes (Stat box) -->
+            <div class="row" style="padding: 30px;">
+               <div class="panel panel-warning-coinvit">
+                  <div class="panel-heading">
+                     <h3 class="panel-title ">Additional Profile for Financial Transactions</h3>
+                  </div>
+                  <!-- End panel-heading -->
+                  <div class="panel-body padding10">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <p class="ml10 mr10 mt10 mb20">
+                              <b>Halo adjieafc</b>, to be able to make a deposit and withdrawal transaction in Fiat, you need to complete the following information. Make sure you provide the correct data, because at the next step you will be asked to verify your Passport.
+                           </p>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Full Name:</label>
+                              <div class="col-sm-7" style="line-height: 10px; padding-bottom: 5px;">
+                                 <input type="text" name="name" value="" id="name" class="form-control" onkeyup="validate_letters(this)"><br>
+                                 <span style="padding: 2px; background: #FFFF00; color: red; line-height: 18px;"><span class="i-warning"></span> The name must be the same as stated on the ID card / passport and bank account.</span>
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <!-- End form-group ml10 row -->
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">No. ID Card/Passport:</label>
+                              <div class="col-sm-7">
+                                 <input type="text" name="nik" value="" id="nik" class="form-control"> 
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Expired Date:</label>
+                              <div class="col-sm-7">
+                                 <input type="text" name="ktp_expired" value="" id="ktp_expired" class="form-control hasDatepicker" autocomplete="off"> 
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="ktp_no_expired" value="1">
+                                    Lifetime </label>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Birth Place:</label>
+                              <div class="col-sm-7">
+                                 <input type="text" name="tempat_lahir" value="" id="tempat_lahir" class="form-control" onkeyup="validate_letters(this)"> 
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Birth Date:</label>
+                              <div class="col-sm-7">
+                                 <input type="text" name="tanggal_lahir" value="0000-00-00" id="tanggal_lahir" class="form-control hasDatepicker"> 
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Gender:</label>
+                              <div class="col-sm-7">
+                                 <select class="form-control">
+                                   <option>Male</option>
+                                   <option>Female</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Warga Negara:</label>
+                              <div class="col-sm-7">
+                                 <select class="form-control">
+                                   <option>option 1</option>
+                                   <option>option 2</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Job:</label>
+                              <div class="col-sm-7">
+                                 <select class="form-control">
+                                   <option>option 1</option>
+                                   <option>option 2</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                           </div>
+                           <div class="form-group ml10 row">
+                              <label class="col-sm-2 control-label nopadding mt10">Address:</label>
+                              <div class="col-md-4 red" style="line-height: 10px; padding-right: 15px;padding-left: 15px;">
+                                 <input type="text" name="address" value="" id="address" class="form-control" placeholder="Street"> 
+                              </div>
+                              <div class="col-md-2 red" style="line-height: 10px;">
+                                <select class="form-control">
+                                   <option>option 1</option>
+                                   <option>option 2</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2 red" style="line-height: 10px;">
+                                 <select class="form-control">
+                                   <option>option 1</option>
+                                   <option>option 2</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2 red" style="line-height: 10px;">
+                                 <input type="text" name="postcode" value="" id="postcode" class="form-control" placeholder="Post Code"> 
+                              </div>
+                           </div>
+                        </div>
+                        <!-- End col-md-12 -->
+                     </div>
+                     <!-- End row -->
+                  </div>
+                  <!-- End panel-body -->
+               </div>
+               <!-- End panel-primary -->
+               <div class="panel panel-warning-coinvit">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Upload Indentity Verification</h3>
+                  </div>
+                  <!-- End panel-heading -->
+                  <div class="panel-body padding10">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="callout" style="margin-bottom: 0!important; background-color: #ffeeb6; border-left: #ffeeb6;">
+                              <h4>Note:</h4>
+                              Verifying your identity improves the security of your account. The next step in the process is to submit the materials needed to verify your identity. While driver’s licenses and ID cards are permitted, we recommend you use passports to help expedite the process. 
+                           </div>
+                           <div class="register-box" style="margin: 1% auto;">
+                              <p>
+                                 Tips for successful verification:
+                                 Take a fresh selfie and ensure that nothing is blocking the full view of your face
+                                 Do not use the same image from your identification documents
+                                 Do not use a professional profile picture
+                                 Do not manipulate the image of your identification in anyway, including the addition of watermarks or blacking out certain information
+                                 Do not crop the image of your ID such that any portion of the ID is removed, including edges
+                              </p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <button type="button" class="btn btn-block btn-warning">Upload your ID Card or Passport</button>
+                                    <button type="button" class="btn btn-block btn-warning">Upload your Picture Holding ID Card or Passport</button>
+                                 </div>
+                                 <!-- /.col -->
+                              </div>
+                           </div>
+                           <!-- Box-Content -->
+                        </div>
+                        <!-- End col-md-12 -->
+                     </div>
+                     <!-- End row -->
+                  </div>
+                  <!-- End panel-body -->
+               </div>
+               <!-- End panel-primary -->
+            </div>
+            <!-- End row -->
