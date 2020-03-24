@@ -1,4 +1,185 @@
 <div class="wrapper">
+	
+	<ng-template [ngIf]="router.url === '/exchange'">
+	<header class="main-header">
+            <!-- Header menu(Markets, Centralize, Decentralize, Login/Register) -->
+            <nav class="collapse navbar-collapse navbar-color">
+               <!-- Sidebar for maximize dan minimize-->
+
+               <!-- Image Hover -->
+               <!-- <img src="dist/img/button/btn-hide-hover.png" data-toggle="push-menu" role="button" width="100px" height="35px" id="icon-setup" class="hide-btn"> -->
+               <!-- <img src="dist/img/button/btn-show-hover.png" data-toggle="push-menu" role="button" width="100px" height="35px" id="icon-setup" class="hide-btn"> -->
+
+               <img src="../assets/dist/img/button/btn-hide.png" data-toggle="push-menu" role="button" width="100" height="30" id="icon-setup" class="hide-btn">  
+
+               <!-- Navbar Right Menu -->
+               <ul class="nav navbar-nav navbar-right custom-nav">
+                  <li class="dropdown">
+                <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
+                <i class="fa fa-th" style="font-size: 1.286em;"></i>
+                </a>
+                <ul class="dropdown-menu products-list product-list-in-box dominan">
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">Exchange</span>
+                            <span class="product-description">
+                            Crypto Asset Exchange
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">Academy</span>
+                            <span class="product-description">
+                            Blockchain & Crypto
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">Education</span>
+                            <span class="product-description">
+                            Education Blockchain & Crypto
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">Crypto News</span>
+                            <span class="product-description">
+                            Self Publication News
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">PORTAL</span>
+                            <span class="product-description">
+                            Self Publication News
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">FORUM</span>
+                            <span class="product-description">
+                            Crypto ANN, Hangout
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                   <li class="item">
+                      <a href="javascript:void(0)">
+                         <div class="product-img">
+                            <img src="assets/dist/img/default-50x50.gif" alt="Product Image">
+                         </div>
+                         <div class="product-info">
+                            <span class="product-title">Marketing</span>
+                            <span class="product-description">
+                            Self Advertising Platform
+                            </span>
+                         </div>
+                      </a>
+                   </li>
+                </ul>
+             </li>
+             <li><a tabindex="-1" [routerLink]="['/']">Markets</a></li>
+             <li><a tabindex="-1" [routerLink]="['/exchange']">Exchange</a></li>
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                Centralize <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                   <li><a tabindex="-1" [routerLink]="['/wallet-centralize']" >Wallet</a></li>
+                   <li><a tabindex="-1" [routerLink]="['/order-centralize']">Orders</a></li>
+                   <li><a tabindex="-1" [routerLink]="['/history-centralize']">History</a></li>
+                </ul>
+             </li>
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="exchange.html">
+                Decentralize <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                   <li><a tabindex="-1" [routerLink]="['/wallet-decentralize']">Wallet</a></li>
+                   <li><a tabindex="-1" [routerLink]="['/order-decentralize']">Orders</a></li>
+                   <li><a tabindex="-1" [routerLink]="['/history-decentralize']">History</a></li>
+                </ul>
+             <li>
+                <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
+                </a>
+             </li>
+             <li>
+                <a href="#">
+                <i class="fa fa-moon-o"></i>    
+                </a>
+             </li>
+             <li>
+                <a [routerLink]="['/activity']">
+                   <i class="glyphicon glyphicon-wrench"></i>    
+                </a>
+             </li>
+             <!-- <li>
+                <img src="dist/img/button/btn-logout.png" width="130px" height="35px" type="button">   
+                <img src="dist/img/button/btn-logout-hover.png" width="130px" height="35px" type="button">   
+             </li> -->
+             <li>
+                <!-- Image Hover -->
+                <!-- <img src="dist/img/button/btn-login-register-hover.png" width="130px" height="35px" type="button"  data-toggle="modal" data-target="#modal-lr"> -->
+                <img src="assets/dist/img/button/btn-login-register.png" width="125" height="30" type="button"  data-toggle="modal" data-target="#modal-lr">
+             </li>
+               </ul>
+            </nav>
+            <!-- Header menu asset-asset coin -->
+            <nav class="navbar navbar-static-top" style="background-color: #232e32; z-index: -1;  min-height: 35px;">
+               <div class="scrollmenu" id="coin-slider">
+                  <a href="#home"><i class="fa fa-star text-yellow"></i>
+                  Only </a>
+                  <a href="#news">Stellar</a>
+                  <a href="#news">Ardor</a>
+                  <a href="#contact">Bitcoin</a>
+                  <a href="#about">Ethereum</a>
+               </div>
+
+
+               <ul class="nav navbar-nav navbar-right margin-right-5 chat-btn hide-chat">
+                  <li><a href="#"><i class="glyphicon glyphicon-comment"></i></a></li>  
+               </ul>
+            </nav>
+            <!-- End Header menu asset-asset coin -->
+         </header>
+	</ng-template>
+	
+	<ng-template [ngIf]="router.url !== '/exchange'">
     <header class="main-header">
        <nav class="collapse navbar-collapse navbar-color">
           <!-- Navbar Right Menu -->
@@ -101,8 +282,8 @@
                    </li>
                 </ul>
              </li>
-             <li><a href="index.html">Markets</a></li>
-             <li><a href="/trade">Exchange</a></li>
+             <li> <a tabindex="-1" [routerLink]="['/']">Markets</a></li>
+             <li> <a tabindex="-1" [routerLink]="['/exchange']">Exchange</a></li>
              <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">
                 Centralize <span class="caret"></span>
@@ -149,6 +330,8 @@
           </ul>
        </nav>
     </header>
+	</ng-template>
+	
     <router-outlet ></router-outlet>
     <!-- Footer -->
     <footer class="main-footer" style="margin-left: 0;">
