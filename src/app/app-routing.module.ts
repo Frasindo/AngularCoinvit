@@ -7,6 +7,7 @@ import { HistoryComponent } from './centralize/history/history.component';
 import { WalletComponentDex } from './decentralize/wallet/wallet.component';
 import { OrderComponentDex } from './decentralize/order/order.component';
 import { HistoryComponentDex } from './decentralize/history/history.component';
+import { ExchangeComponent } from './exchange/exchange.component';
 
 
 
@@ -38,6 +39,10 @@ const routes: Routes = [
   },{
     path: 'history-decentralize',
     component: HistoryComponentDex
+  },
+  {
+	  path: 'exchange',
+    component: ExchangeComponent
   },
   {
     path: '',
