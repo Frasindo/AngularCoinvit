@@ -12,7 +12,7 @@ $(function(){
   
 
 $('#coin-slider').slimscroll({
-  color: '#d2d6de',
+  color: 'blue',
   railOpacity: 0.3,
   height: '35px',
   width: '90%',
