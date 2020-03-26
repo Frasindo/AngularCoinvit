@@ -41,13 +41,23 @@
               "src/assets/bower_components/datatables.net/js/jquery.dataTables.min.js",
               "src/assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js",
               "src/assets/dist/js/adminlte.min.js",
+			  "src/assets/bower_components/jquery-slimscroll/vertical/jquery.slimscroll.min.js",
+			  "src/assets/dist/js/scroll-list-trade.js",
               "src/assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js",
               "src/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
               "src/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
+			  "src/assets/dist/js/redirect-mobile.js",
               "src/assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js",
-              "src/assets/dist/js/pagination-trade.js",
-              "src/assets/dist/js/redirect-mobile.js",
-              "src/assets/dist/js/dropdown-hover.js"
+			  "src/assets/dist/js/chat-function.js",
+			  "src/assets/dist/js/modal-login-register.js",
+			  
+			  "src/assets/dist/js/pages/dashboard2.js",
+			  "src/assets/dist/js/demo.js",
+			  "src/assets/dist/js/dropdown-hover.js",
+			  "src/assets/dist/js/trade-screen.js",
+			  "src/assets/dist/js/fav-asset-trade.js",
+			  "src/assets/dist/js/pagination-trade.js",
+			  "src/assets/dist/js/setup-table.js"
             ]
           },
           "configurations": {

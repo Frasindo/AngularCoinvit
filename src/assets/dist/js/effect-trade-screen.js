@@ -217,5 +217,6 @@
          $('#asset').slimScroll({
             height: '70vh'
          });
+
         }
       });

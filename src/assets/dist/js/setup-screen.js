@@ -1,10 +1,11 @@
 setTimeout(function(){ 
   $("body").addClass("sidebar-collapse");//ganti attribute dokumentasi jquery
-    $("#icon-setup").attr("src","dist/img/button/btn-show.png");
+    $("#icon-setup").attr("src","../assets/dist/img/button/btn-show.png");
      $("#btn-token").css('width', '95%');
      $("#btn-fiat").css('width', '95%');
      $("#btn-fiat").css('margin-top', '5px');
-
+	 
+	
     $('.hide-mini').css('display', 'none');
     $('.back-margin-left').css('margin-left', '0px');
     $('.logo-icon').css('margin-left', '0px');
